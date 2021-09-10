@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.nav-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.nav-container ul li {
+  margin: 0 30px;
+  display: inline-block;
+}
+.tag {
+  width: 70px;
+  height: 10px;
+  border-radius: 15px;
+}
+.home {
+  background-color: rgb(87, 238, 94);
+}
+
+.hobbie {
+  background-color: rgb(233, 210, 105);
+}
+.about {
+  background-color: rgb(236, 68, 68);
+}
+.back-to-top {
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+  background-color: rgba(59, 59, 59, 0.712);
+  padding: 0px 5px;
+  border-radius: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+.img-props {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+}
+.landing-page-img-1 {
+  background-position: 50%;
+  background-image: url('./assets/Beach.jpg');
+}
+.landing-page-img-2 {
+  margin: 40px 0;
+  background-position: 50%;
+  background-image: url('./assets/charcoal.jpg');
+}
+.landing-page-img-3 {
+  background-image: url('./assets/Reformation.jpg');
+}
+.hobbies-page-img-1 {
+  background-image: url('./assets/headphones.jpg');
+}
+.hobbies-page-img-2 {
+  margin: 40px 0;
+  background-position: 70% 50%;
+  background-image: url('./assets/Medusa.jpg');
+}
+.hobbies-page-img-3 {
+  background-size: cover;
+  background-image: url('./assets/maria-felix.jpg');
+}
