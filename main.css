@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Walter+Turncoat&display=swap');
-
+@keyframes gradient {
+  0% {
+    background-position: 68% 0%;
+  }
+  50% {
+    background-position: 33% 100%;
+  }
+  100% {
+    background-position: 68% 0%;
+  }
+}
 :root {
   --green: #0ea057d2;
   --yellow: #ffe100e0;
@@ -61,6 +71,7 @@
   border: 1px solid white;
   transition: all 0.3s linear;
 }
+
 .back-to-top::before {
   position: absolute;
   content: '';
@@ -70,10 +81,13 @@
   left: 0;
   background: linear-gradient(180deg, var(--green), var(--yellow), var(--red));
   z-index: -1;
-  transition: opacity 0.3s linear;
+  transition: all 0.3s linear;
   border-radius: 15px;
   opacity: 0;
+  background-size: 650% 650%;
+  animation: gradient 3s ease infinite;
 }
+
 .back-to-top:hover::before {
   opacity: 1;
 }
