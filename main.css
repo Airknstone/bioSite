@@ -94,7 +94,7 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   background-color: var(--charcoal-grey);
 }
 
@@ -136,16 +136,23 @@
   position: relative;
   overflow: hidden;
 }
+.right-text {
+  right: 15px;
+  top: 10%;
+  text-align: right;
+}
+.left-text {
+  left: 15px;
+  bottom: 3%;
+}
 .triangle-text {
   position: absolute;
   font-family: 'Walter Turncoat', cursive;
-  text-align: right;
+
   width: 230px;
   color: white;
   font-size: 22px;
   z-index: 2;
-  right: 15px;
-  top: 13%;
 }
 .triangle {
   z-index: 1;
@@ -210,21 +217,33 @@
   background-size: cover;
   background-image: url('./assets/maria-felix.jpg');
 }
-
 .bio {
-  padding-top: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100vw;
-  height: 100vh;
-  color: wheat;
+  margin-top: 20vh;
+  display: inline-block;
+  width: 48%;
+  height: 650px;
+  overflow: hidden;
 }
-.bio-image {
-  width: 400px;
-  height: 600px;
+.left-div {
+  text-align: right;
+  float: left;
 }
-.bio-image img {
-  width: 100%;
+.left-div img {
   height: 100%;
+  width: 80%;
+}
+.right-div {
+  color: white;
+  font-family: 'Walter Turncoat', cursive;
+  float: right;
+  font-size: 26px;
+}
+.line {
+  width: 400px;
+  height: 4px;
+  background: linear-gradient(45deg, var(--green), var(--yellow), var(--red));
+  border-radius: 45px;
+}
+.hobbies {
+  border-right: 30vw solid var(--yellow);
 }
