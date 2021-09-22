@@ -193,6 +193,7 @@ footer {
 }
 
 .img-props {
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.7;
