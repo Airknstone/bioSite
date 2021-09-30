@@ -40,7 +40,6 @@ footer {
   font-size: 40px;
 }
 .nav-container {
-  background-color: var(--charcoal-grey);
   left: 50%;
   position: fixed;
   z-index: 5;
