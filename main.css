@@ -193,20 +193,20 @@ iframe {
   scroll-snap-align: start;
 }
 .right-text {
-  right: 15px;
+  right: 10px;
   top: 8%;
   text-align: right;
 }
 .left-text {
-  left: 15px;
+  left: 10px;
   bottom: 3%;
 }
 .triangle-text {
   position: absolute;
   font-family: 'Sora', sans-serif;
-  width: 17.5%;
+  width: 17.5vw;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 30px;
   z-index: 2;
 }
@@ -292,7 +292,7 @@ iframe {
   position: absolute;
   top: 55%;
   left: 50%;
-  
+
   max-height: 80%;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -306,7 +306,7 @@ iframe {
   }
 }
 #about-img {
-  min-width:  45%;
+  min-width: 45%;
 }
 .about-container h2 {
   position: relative;
@@ -338,5 +338,3 @@ footer {
   color: white;
   font-size: 0.8rem;
 }
-
-
