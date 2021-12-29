@@ -1,0 +1,20 @@
+$bg-color: rgba(28, 28, 28, 0.926);
+$neon-color: rgb(0, 247, 255);
+$font-color: rgb(245, 245, 245);
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(27, 28, 28);
+}
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+@mixin boxShadow {
+  box-shadow: 5px 0px 5px $neon-color;
+}
+@mixin boxShadowAnimation {
+  box-shadow: 1px 0px 20px $neon-color;
+}
