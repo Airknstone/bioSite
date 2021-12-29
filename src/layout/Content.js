@@ -3,19 +3,19 @@ import Intro from "./Content/Intro";
 import Portfolio from "./Content/Portfolio";
 import AboutMe from "./Content/AboutMe";
 import Contact from "./Content/Contact";
-export default function Content(params) {
+export default function Content(props) {
   return (
     <div className='content-container'>
       <div>
-        <Intro />
+        <Intro power={props.power} />
         <div id='portfolio'>
-          <Portfolio />
+          <Portfolio power={props.power} />
         </div>
         <div id='about-me'>
-          <AboutMe />
+          <AboutMe power={props.power} />
         </div>
         <div id='contact'>
-          <Contact />
+          <Contact power={props.power} />
         </div>
       </div>
     </div>

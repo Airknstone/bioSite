@@ -3,6 +3,13 @@
     @include boxShadowAnimation;
   }
 }
+@keyframes powerUp {
+  50% {
+    @include boxShadowAnimation;
+    border-radius: 30px;
+    background-color: rgba(5, 34, 36, 0.549);
+  }
+}
 @keyframes grow-line {
   0% {
     width: 0%;
@@ -32,9 +39,13 @@
 }
 @keyframes dashes {
   100% {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 100;
     stroke-width: 2;
   }
+}
+.powerUp {
+  animation: powerUp 2s linear infinite;
+  opacity: 1 !important;
 }
 .side-nav-container {
   text-align: center;
@@ -67,7 +78,6 @@
 }
 #git-icon {
   margin-top: 25vh;
-
   & a {
     padding: 8px;
     transition: all 0.4s ease;
@@ -121,10 +131,10 @@
     stroke-width: 4;
     fill: $neon-color;
     stroke-dasharray: 200px;
-    transition: fill 1s ease;
-    animation: dash 3.4s linear forwards;
+    animation: dash 3s linear forwards;
+    animation-iteration-count: 1;
     &:hover {
-      animation: dashes 10s linear infinite;
+      animation: dashes 1s linear infinite;
     }
   }
 }
