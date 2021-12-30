@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Intro(props) {
-  console.log(props.power);
   return (
     <div
       className={props.power === true ? "content powerUp" : "content"}

@@ -1,8 +1,15 @@
 import * as React from "react";
 import { useEffect } from "react";
+import { useState } from "react/cjs/react.development";
 
 const SvgComponent = (props) => {
-  useEffect(() => {}, []);
+  const [loadOnce, setLoadOnce] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadOnce(false);
+    }, 3000);
+  }, []);
+
   return (
     <>
       <svg
@@ -10,7 +17,7 @@ const SvgComponent = (props) => {
         width={100}
         height={122.319}
         viewBox='0 0 200 222.319'
-        className='css-1j8o68f'>
+        className={loadOnce === true ? "css-1j8o68f" : "logo-animate"}>
         <path
           style={{
             textIndent: 0,

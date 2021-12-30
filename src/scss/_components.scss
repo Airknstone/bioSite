@@ -4,7 +4,7 @@
   }
 }
 @keyframes powerUp {
-  50% {
+  100% {
     @include boxShadowAnimation;
     border-radius: 30px;
     background-color: rgba(5, 34, 36, 0.549);
@@ -39,19 +39,31 @@
 }
 @keyframes dashes {
   100% {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 8000;
     stroke-width: 2;
   }
 }
 .powerUp {
-  animation: powerUp 2s linear infinite;
+  animation: powerUp 3s linear forwards;
   opacity: 1 !important;
+}
+.logo-animate {
+  fill: $neon-color;
+  stroke-dasharray: 100px;
+  transition: all 0.3s ease;
+  &:hover {
+    stroke: $neon-color;
+    stroke-width: 3;
+    fill: $neon-color;
+
+    animation: dashes 30s linear forwards;
+  }
 }
 .side-nav-container {
   text-align: center;
   position: fixed;
   height: 100vh;
-  width: 11vw;
+  width: 130px;
   background-color: $bg-color;
   color: white;
   padding: 5px;
@@ -99,7 +111,6 @@
 }
 .nav-component-container {
   margin: 1px auto;
-  border-bottom: 1px solid transparent;
 }
 .nav-component-container:hover {
   cursor: pointer;
@@ -121,14 +132,14 @@
   animation: grow-line 3.2s ease forwards,
     opacityAnimation 5s ease reverse forwards;
 }
+
 #logo {
-  margin-left: 2.7vw;
-  text-align: center;
   width: 20px;
+  margin-left: 10px;
   height: 80px;
   & .css-1j8o68f {
     stroke: $neon-color;
-    stroke-width: 4;
+    stroke-width: 8;
     fill: $neon-color;
     stroke-dasharray: 200px;
     animation: dash 3s linear forwards;
