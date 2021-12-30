@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bioSite/static/css/main.f67b57ab.css",
-    "main.js": "/bioSite/static/js/main.33a75d0e.js",
+    "main.js": "/bioSite/static/js/main.011df04f.js",
     "index.html": "/bioSite/index.html",
     "main.f67b57ab.css.map": "/bioSite/static/css/main.f67b57ab.css.map",
-    "main.33a75d0e.js.map": "/bioSite/static/js/main.33a75d0e.js.map"
+    "main.011df04f.js.map": "/bioSite/static/js/main.011df04f.js.map"
   },
   "entrypoints": [
     "static/css/main.f67b57ab.css",
-    "static/js/main.33a75d0e.js"
+    "static/js/main.011df04f.js"
   ]
 }
