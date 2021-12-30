@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bioSite/static/css/main.f67b57ab.css",
-    "main.js": "/bioSite/static/js/main.011df04f.js",
+    "main.css": "/bioSite/static/css/main.09bcd960.css",
+    "main.js": "/bioSite/static/js/main.bf077c4b.js",
     "index.html": "/bioSite/index.html",
-    "main.f67b57ab.css.map": "/bioSite/static/css/main.f67b57ab.css.map",
-    "main.011df04f.js.map": "/bioSite/static/js/main.011df04f.js.map"
+    "main.09bcd960.css.map": "/bioSite/static/css/main.09bcd960.css.map",
+    "main.bf077c4b.js.map": "/bioSite/static/js/main.bf077c4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f67b57ab.css",
-    "static/js/main.011df04f.js"
+    "static/css/main.09bcd960.css",
+    "static/js/main.bf077c4b.js"
   ]
 }
