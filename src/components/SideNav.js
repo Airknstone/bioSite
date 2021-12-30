@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import SvgComponent from "./Logo";
+import { motion } from "framer-motion";
 import {
   FaHome,
   FaCode,
@@ -8,23 +9,18 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 import SideNavComponents from "./SideNavComponents";
-import gsap from "gsap";
+
 export default function SideNav(props) {
-  //const boxRef = useRef();
-
-  // useEffect(() => {
-  //   gsap.to(boxRef.current, { rotation: "+=360", delay: 3 });
-  // });
-
   return (
     <>
       <div className='side-nav-container'>
-        <div
+        <motion.div
+          animate={{ x: 1 }}
           id='logo'
           onMouseEnter={props.togglePowerLevel}
           onMouseLeave={props.togglePowerLevel}>
           <SvgComponent />{" "}
-        </div>
+        </motion.div>
 
         <div className='side-nav-content'>
           <SideNavComponents

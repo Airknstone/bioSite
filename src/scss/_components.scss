@@ -43,6 +43,20 @@
     stroke-width: 2;
   }
 }
+#cursor {
+  outline: 1px solid $neon-color;
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+  background-color: $bg-color;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: difference;
+  backdrop-filter: hue-rotate(200deg);
+}
 .powerUp {
   animation: powerUp 3s linear forwards;
   opacity: 1 !important;
@@ -113,7 +127,6 @@
   margin: 1px auto;
 }
 .nav-component-container:hover {
-  cursor: pointer;
   background-color: $neon-color;
   border-radius: 20px;
   color: rgba(36, 36, 36, 0.796) !important;
@@ -125,12 +138,11 @@
   color: $bg-color;
 }
 #line-bottom {
-  bottom: 0;
-  right: 0;
+  position: relative;
+  right: -30px;
   height: 1px;
   background-color: $neon-color;
-  animation: grow-line 3.2s ease forwards,
-    opacityAnimation 5s ease reverse forwards;
+  animation: opacityAnimation 5s ease reverse forwards;
 }
 
 #logo {
@@ -139,7 +151,7 @@
   height: 80px;
   & .css-1j8o68f {
     stroke: $neon-color;
-    stroke-width: 8;
+    stroke-width: 3;
     fill: $neon-color;
     stroke-dasharray: 200px;
     animation: dash 3s linear forwards;
