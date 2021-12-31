@@ -14,9 +14,9 @@
 }
 
 .content {
-  margin: 1rem;
+  width: 90vw;
   min-height: 95vh;
-  padding: 1rem;
+  padding: 2rem 4rem;
   opacity: 0;
   animation: opacityAnimation 2s ease forwards, glow 2s ease forwards;
   animation-delay: 2s;
