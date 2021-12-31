@@ -1,0 +1,163 @@
+@keyframes glow {
+  50% {
+    @include boxShadowAnimation;
+  }
+}
+@keyframes powerUp {
+  100% {
+    @include boxShadowAnimation;
+    border-radius: 30px;
+    background-color: rgba(5, 34, 36, 0.549);
+  }
+}
+@keyframes grow-line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow {
+  100% {
+    transform: scaleY(20);
+  }
+}
+@keyframes borderBottom {
+  100% {
+    border-bottom: 1px solid $neon-color;
+  }
+}
+@keyframes dash {
+  75% {
+    stroke-width: 2;
+  }
+  100% {
+    stroke-dashoffset: 800;
+    stroke-width: 0;
+  }
+}
+@keyframes dashes {
+  100% {
+    stroke-dashoffset: 8000;
+    stroke-width: 2;
+  }
+}
+#cursor {
+  outline: 1px solid $neon-color;
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+  background-color: $bg-color;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: difference;
+  backdrop-filter: hue-rotate(200deg);
+}
+.powerUp {
+  animation: powerUp 3s linear forwards;
+  opacity: 1 !important;
+}
+.logo-animate {
+  fill: $neon-color;
+  stroke-dasharray: 100px;
+  transition: all 0.3s ease;
+  &:hover {
+    stroke: $neon-color;
+    stroke-width: 3;
+    fill: $neon-color;
+
+    animation: dashes 30s linear forwards;
+  }
+}
+.side-nav-container {
+  text-align: center;
+  position: fixed;
+  height: 100vh;
+  width: 130px;
+  background-color: $bg-color;
+  color: white;
+  padding: 5px;
+}
+
+.side-nav-content {
+  padding: 5px;
+  margin: 20vh auto;
+  opacity: 0;
+  animation: opacityAnimation 2s ease forwards;
+  animation-delay: 1s;
+}
+.side-nav-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  right: 0px;
+  width: 1px;
+  background-color: $bg-color;
+  outline: 1px solid $neon-color;
+  @include boxShadow;
+  animation: grow 2s linear forwards, glow 2s infinite;
+}
+#git-icon {
+  margin-top: 25vh;
+  & a {
+    padding: 8px;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $neon-color;
+      border-bottom: 1px solid $neon-color;
+    }
+  }
+}
+
+#nav-icon {
+  padding-top: 12px;
+  font-size: 1.4rem;
+}
+#nav-title {
+  font-size: 1rem;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+.nav-component-container {
+  margin: 1px auto;
+}
+.nav-component-container:hover {
+  background-color: $neon-color;
+  border-radius: 20px;
+  color: rgba(36, 36, 36, 0.796) !important;
+  transition: all 0.2s ease-in-out;
+  animation: glow 3s linear infinite;
+}
+
+#nav-link:hover {
+  color: $bg-color;
+}
+#line-bottom {
+  position: relative;
+  right: -30px;
+  height: 1px;
+  background-color: $neon-color;
+  animation: opacityAnimation 5s ease reverse forwards;
+}
+
+#logo {
+  width: 20px;
+  margin-left: 10px;
+  height: 80px;
+  & .css-1j8o68f {
+    stroke: $neon-color;
+    stroke-width: 3;
+    fill: $neon-color;
+    stroke-dasharray: 200px;
+    animation: dash 3s linear forwards;
+    animation-iteration-count: 1;
+    &:hover {
+      animation: dashes 1s linear infinite;
+    }
+  }
+}
