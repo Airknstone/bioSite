@@ -9,14 +9,14 @@
 }
 
 .content-container {
-  margin-left: 120px;
+  margin-left: 135px;
   color: white;
 }
 
 .content {
-  width: 90vw;
-  min-height: 95vh;
-  padding: 2rem 4rem;
+  width: 88vw;
+  min-height: 97vh;
+  padding: 2rem 2rem;
   opacity: 0;
   animation: opacityAnimation 2s ease forwards, glow 2s ease forwards;
   animation-delay: 2s;
