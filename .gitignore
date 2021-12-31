@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/ipfsBuild
 # misc
 .DS_Store
 .env.local

@@ -85,13 +85,18 @@
 
 .side-nav-content {
   padding: 5px;
-  margin: 20vh auto;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  bottom: 0;
+  right: 0;
+
   opacity: 0;
   animation: opacityAnimation 2s ease forwards;
   animation-delay: 1s;
 }
 .side-nav-container::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   height: 10%;
@@ -103,7 +108,10 @@
   animation: grow 2s linear forwards, glow 2s infinite;
 }
 #git-icon {
-  margin-top: 25vh;
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  right: 0;
   & a {
     padding: 8px;
     transition: all 0.4s ease;
