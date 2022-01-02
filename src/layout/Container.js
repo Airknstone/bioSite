@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SideNav from "../components/SideNav";
 import Content from "./Content";
+import { motion } from 'framer-motion';
 export default function Container(params) {
   const [powerLevel, setPowerLevel] = useState(false);
   const togglePowerLevel = () => {
@@ -16,12 +17,15 @@ export default function Container(params) {
 
   return (
     <div className='container'>
-      <div
+      <motion.div
+        initial={ { display: 'none' } }
+        animate={ { display: 'block' } }
+        transition={{delay:2, ease: 'easeOut'}}
         id='cursor'
         style={{
           left: cursorX + "px",
           top: cursorY + "px",
-        }}></div>
+        }}></motion.div>
       <SideNav power={powerLevel} togglePowerLevel={togglePowerLevel} />
       <Content power={powerLevel} />
     </div>
